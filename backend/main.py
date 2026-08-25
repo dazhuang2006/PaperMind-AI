@@ -4,8 +4,8 @@ from contextlib import asynccontextmanager  # 用来写"启动时/关闭时"逻�
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware  # 允许前端跨域访问
 
-from app.api.router import api_router  # 汇总后的所有接口
-from app.core.config import settings   # 全局配置
+from backend.app.api.router import api_router  # 汇总后的所有接口
+from backend.app.core.config import settings   # 全局配置
 
 
 @asynccontextmanager

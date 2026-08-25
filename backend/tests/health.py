@@ -5,8 +5,8 @@ from pathlib import Path
 
 from fastapi.testclient import TestClient
 
-# 把 backend 目录加入导入路径，这样不管从哪个目录运行测试都能找到 main.py
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+# 把项目根目录加入导入路径，这样不管从哪个目录运行测试都能找到 backend 包
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from backend.main import app
 
